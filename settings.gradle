@@ -1,0 +1,3 @@
+include ':plugin_app'
+include ':app'
+rootProject.name = "HeadFirstPlugin"
