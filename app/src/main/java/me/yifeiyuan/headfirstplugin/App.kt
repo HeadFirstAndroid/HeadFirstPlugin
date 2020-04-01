@@ -1,18 +1,21 @@
-# HeadFirstPlugin
+package me.yifeiyuan.headfirstplugin
 
-尝试学一下插件化。
+import android.app.Application
+import android.content.Context
+import dalvik.system.PathClassLoader
 
-outputs 目录下有个插件的 apk，可以用来被测试。
+/**
+ * Created by 程序亦非猿 on 2020/4/1.
+ */
+class App : Application() {
 
-跑 Demo 步骤：
-1. 将 outputs/plugin_app-debug.apk 放到手机的 sdcard 目录下；
-2. 运行项目的 app 工程；
-3. 授权 app 存储权限；
-4. 点击首页按钮
-5. 查看 logcat 日志，如果有"D/程序亦非猿: hello plugin，来自插件的方法" 输出就代表成功
+    override fun onCreate() {
+        super.onCreate()
+//        loadPlugin(this)
+    }
 
-核心代码：
-```kotlin
+    companion object {
+
         val path = "/sdcard/plugin_app-debug.apk"
 
         fun loadPlugin(context: Context) {
@@ -57,4 +60,4 @@ outputs 目录下有个插件的 apk，可以用来被测试。
             dexElementsFiled.set(hostDexPathList, newDexElements)
         }
     }
-```
+}
