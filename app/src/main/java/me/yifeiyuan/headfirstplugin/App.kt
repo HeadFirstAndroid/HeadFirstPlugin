@@ -17,7 +17,7 @@ class App : Application() {
     companion object {
 
         val path = "/sdcard/plugin_app-debug.apk"
-
+        //按 6.0.1 源码写的
         fun loadPlugin(context: Context) {
 
             val baseDexClassLoaderClass = Class.forName("dalvik.system.BaseDexClassLoader")
