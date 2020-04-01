@@ -56,5 +56,9 @@ outputs 目录下有个插件的 apk，可以用来被测试。
             //将宿主的 DexPathList 里的 dexElements 替换为新的 dexElements，完成插件的类加载
             dexElementsFiled.set(hostDexPathList, newDexElements)
         }
-    }
 ```
+
+手里有个 6.0.1 的手机，所以代码是按照这个版本写的，其他版本可能需要修改代码。
+
+http://aospxref.com/android-6.0.1_r81/xref/libcore/dalvik/src/main/java/dalvik/system/DexPathList.java
+http://aospxref.com/android-6.0.1_r81/xref/libcore/dalvik/src/main/java/dalvik/system/BaseDexClassLoader.java
