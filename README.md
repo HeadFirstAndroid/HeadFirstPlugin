@@ -62,3 +62,6 @@ outputs 目录下有个插件的 apk，可以用来被测试。
 
 http://aospxref.com/android-6.0.1_r81/xref/libcore/dalvik/src/main/java/dalvik/system/DexPathList.java
 http://aospxref.com/android-6.0.1_r81/xref/libcore/dalvik/src/main/java/dalvik/system/BaseDexClassLoader.java
+
+
+只加载插件的类在分支：feature/load_plugin_class 
