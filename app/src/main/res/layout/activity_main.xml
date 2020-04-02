@@ -7,13 +7,36 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:onClick="performLoadPlugin"
+        android:id="@+id/loadPluginClass"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:text="加载插件"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:onClick="performLoadPlugin"
+        android:text="加载插件的类"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/loadPluginActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:onClick="performLoadPluginActivityWithoutRes"
+        android:text="加载插件里『不』带布局资源的 Activity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loadPluginClass" />
+
+    <TextView
+        android:id="@+id/loadPluginActivityWithRes"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:onClick="performLoadPluginActivityWithRes"
+        android:text="加载插件里带布局资源的 Activity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loadPluginActivity" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

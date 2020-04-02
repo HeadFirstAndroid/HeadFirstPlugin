@@ -16,6 +16,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * 加载插件里的类
+     */
     fun performLoadPlugin(view: View) {
         try {
             App.loadPlugin(this)
@@ -24,5 +27,22 @@ class MainActivity : AppCompatActivity() {
         } catch (ex: Exception) {
             ex.printStackTrace()
         }
+    }
+
+
+    /**
+     * 加载插件里不带资源的 Activity
+     */
+    fun performLoadPluginActivityWithoutRes(view: View) {
+
+        //android.app.Instrumentation
+    }
+
+
+    /**
+     * 加载插件里带资源的 Activity
+     */
+    fun performLoadPluginActivityWithRes(view: View) {
+
     }
 }
