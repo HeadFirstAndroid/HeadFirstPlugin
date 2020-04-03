@@ -11,7 +11,9 @@ class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
-//        loadPlugin(this)
+        loadPlugin(this)
+        HookUtils.hookActivityThreadH()
+        HookUtils.hookAMS(this)
     }
 
     companion object {

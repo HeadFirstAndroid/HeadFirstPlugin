@@ -65,3 +65,7 @@ http://aospxref.com/android-6.0.1_r81/xref/libcore/dalvik/src/main/java/dalvik/s
 
 
 只加载插件的类在分支：feature/load_plugin_class 
+
+坑：系统多个版本不兼容，Hook 需要保证兼容性
+
+小米手机 MiuiResources ，瞎改

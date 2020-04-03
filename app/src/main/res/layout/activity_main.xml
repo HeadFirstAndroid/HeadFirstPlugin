@@ -39,4 +39,15 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/loadPluginActivity" />
 
+    <TextView
+        android:id="@+id/loadProxyActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:onClick="loadHostProxyActivity"
+        android:text="启动宿主 ProxyActivity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loadPluginActivityWithRes" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
