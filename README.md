@@ -68,4 +68,11 @@ http://aospxref.com/android-6.0.1_r81/xref/libcore/dalvik/src/main/java/dalvik/s
 
 坑：系统多个版本不兼容，Hook 需要保证兼容性
 
+## 启动 Activity
+
+在启动前后，骗过 AMS 校验。
+
+## 资源加载
 小米手机 MiuiResources ，瞎改
+
+在插件自己加载自己的资源，隔离。

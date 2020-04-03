@@ -3,7 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 23 //23 6.0
+    compileSdkVersion 29 //23 6.0
 
     defaultConfig {
         applicationId "me.yifeiyuan.plugin_app"
