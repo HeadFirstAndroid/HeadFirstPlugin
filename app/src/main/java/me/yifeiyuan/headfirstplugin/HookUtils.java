@@ -89,8 +89,6 @@ public class HookUtils {
             Log.d(TAG, "hookAMS: ");
             mInstanceField.set(gDefault, proxyInstance);
 
-//            IActivityManagerSingletonField.set(IActivityManagerSingleton, proxyInstance);
-
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (NoSuchFieldException e) {
